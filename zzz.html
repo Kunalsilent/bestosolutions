@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Create sections with a fixed height for scrolling */
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+
+        /* Style the content within each section */
+        .content {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        /* Add a scroll animation to elements with the .animate class */
+        .animate {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s, transform 1s;
+        }
+
+        /* Trigger the animation when scrolling */
+        .animate.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="content">
+            <h1>Scroll Down</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <p class="animate">Scroll to see the animation</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <p class="animate">Keep scrolling</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <p class="animate">More content below</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <p class="animate">Scroll to the end</p>
+        </div>
+    </section>
+
+    <script>
+        const elements = document.querySelectorAll('.animate');
+
+        window.addEventListener('scroll', () => {
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                if (elementTop < window.innerHeight - 100) {
+                    element.classList.add('in-view');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
