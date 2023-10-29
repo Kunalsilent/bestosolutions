@@ -20,6 +20,7 @@ for (let i = 0; i < elemArr.length; i++) {
   });
 }
 
+
 /**
  * toggle navbar & overlay when click any navbar-link
  */

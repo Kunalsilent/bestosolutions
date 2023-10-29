@@ -334,7 +334,7 @@ body {
   border-radius: 4px;
 }
 .nav-link{
-  color: white;
+  color: rgb(155, 155, 155);
   font-size: var(--fs-8);
   font-weight: var(--fw-600);
   padding-block: 12px;
