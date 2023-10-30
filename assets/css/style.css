@@ -777,7 +777,9 @@ body {
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
-
+.text{
+  font-size: 12px;
+}
 .footer { font-size: var(--fs-8); }
 
 .footer a { color: inherit; }
@@ -794,12 +796,12 @@ body {
 
 .footer-brand .logo {
   font-weight: var(--fw-700);
-  margin-block-end: 15px;
+  margin-block-end: 12px;
 }
 
 .footer-brand .text {
   font-size: var(--fs-8);
-  margin-block-end: 20px;
+  margin-block-end: 10px;
 }
 
 .social-list {
@@ -829,6 +831,9 @@ body {
   font-size: var(--fs-5);
   font-weight: var(--fw-700);
   margin-block-end: 15px;
+}
+.footer-list{
+  font-size: 12px;
 }
 
 .footer-link { padding-block: 5px; }
@@ -1511,3 +1516,6 @@ contact page css start */
 .map-container iframe {
   max-width: 100%;
 }
+
+/* card css for service */
+
