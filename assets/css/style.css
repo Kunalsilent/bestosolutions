@@ -1589,3 +1589,12 @@ p {
   }
 }
 
+/* whstapp btn css */
+
+.whatsapp_float{
+  position: fixed;
+  bottom: 30px;
+  top: 600px;
+  right: 20px;
+}
+
