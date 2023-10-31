@@ -1517,5 +1517,75 @@ contact page css start */
   max-width: 100%;
 }
 
-/* card css for service */
+/* faq css 
+ */
+
+
+ .faq .faq-item {
+  margin: 20px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.faq .faq-item i {
+  color: #8bc4ea;
+  font-size: 24px;
+  float: left;
+  line-height: 0;
+  padding: 13px 0 0 0;
+  margin: 0;
+}
+
+.faq .faq-item h4 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  margin: 0 0 10px 32px;
+  font-family: "Poppins", sans-serif;
+}
+
+.faq .faq-item p {
+  font-size: 15px;
+}
+
+/* css for privacy page */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.priv {
+  font-size: 20px;
+  margin-top: 20px;
+  color: hsl(231, 75%, 22%);
+}
+.priv-heading{
+  text-align: center;
+  color: #111961;
+  font-size: 39px;
+  text-shadow:2px 2px #7a6f6f;
+}
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 20px;
+  }
+  .content {
+      padding: 10px;
+  }
+  h2 {
+      font-size: 18px;
+  }
+  p {
+      font-size: 14px;
+  }
+}
 

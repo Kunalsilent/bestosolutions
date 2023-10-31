@@ -84,3 +84,5 @@ window.addEventListener("scroll", function () {
 });
 
 
+
+// scipt for faq
