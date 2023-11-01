@@ -158,7 +158,7 @@
 <section>
   <div class="formed">
     <h3>Contact Form</h3>
-    <form  name="contact_form"   action="https://formspree.io/f/xpzgnzog"
+    <form   id="myForm" name="contact_form"   action="https://formspree.io/f/xpzgnzog"
     method="POST" >
       <label for="first_name">First Name</label>
       <input name="first_name" type="text" required placeholder="John" autocomplete="off" required/>
@@ -172,11 +172,24 @@
       <label for="message">Message</label><br>
       <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
       <div class="center">
-        <input type="submit" value="Submit">
+        <input type="submit" id="submitBtn" value="Submit">
       </div>
     </form>	
   </div>
     </section>
+
+      <!-- form scipt -->
+      <script>
+        document.getElementById("myForm").addEventListener("submit", function (e) {
+          // You can perform any necessary form submission logic here
+          // Make sure to include your form data processing, such as sending data to FormsFree
+    
+          // After successful submission, reset the form
+          setTimeout(function() {
+            document.getElementById("myForm").reset();
+          }, 1000); // Delay the reset for 1 second (adjust the delay as needed)
+        });
+      </script>
     <br>
     <div class="map-container">
       <iframe
@@ -449,6 +462,8 @@
         // Check when scrolling
         window.addEventListener('scroll', addInViewClass);
       </script>
+      
+    
 
 
 </body>
