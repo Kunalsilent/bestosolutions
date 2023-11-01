@@ -1598,3 +1598,117 @@ p {
   right: 20px;
 }
 
+/* chatbot css */
+
+/* .chat_icon{
+  position: fixed;
+  right: 30px;
+  bottom: 0;
+  font-size: 80px;
+  top: 500px;
+  font-size: 50px;
+color: #fff;
+cursor: pointer;
+z-index: 1000;
+}
+.chatbot-icon{
+  color: #cf1b7e;
+
+}
+.chat_box{
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 400px;
+  height: 80vh;
+  background: #dedede;
+  z-index: 1000%;
+  transition: all 0.3s ease-out;
+  transform: scaleY(0);
+
+}
+.chat_box.active{
+  transform: scaleY(1);
+}
+.hidden{
+  display: none !important ;
+}
+.conv-form-wrapper textarea{
+height: 30px;
+overflow: hidden;
+resize: none;
+}
+#messages{
+  padding: 20px;
+} */
+
+/* contact form css */
+
+.formed {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.formed h3 {
+  font-size: 24px;
+  color: #351355;
+}
+
+.formed form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formed label {
+  text-align: left;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.formed input[type="text"],
+.formed input[type="email"],
+.formed textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.formed textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.formed .center {
+  text-align: center;
+}
+
+.formed input[type="submit"] {
+  background-color: var(--winter-sky);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.formed input[type="submit"]:hover {
+  background-color: #9333ea;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .formed {
+    max-width: 90%;
+  }
+}
