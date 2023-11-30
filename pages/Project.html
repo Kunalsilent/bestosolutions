@@ -6,7 +6,66 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Projects</title>
-
+  <style>
+    i {
+      position: relative;
+      display: block;
+      width: 100vw; /* Adjust the width as needed for full width */
+      height: 50vh; /* Adjust the height as needed */
+      overflow: hidden;
+      border-radius: 5px;
+    }
+  
+    input[type="radio"] {
+      appearance: none;
+      -ms-appearance: none;
+      -webkit-appearance: none;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 5px;
+      background-repeat: no-repeat;
+      background-size: contain; /* Ensure the background image is contained */
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+  
+    input:checked {
+      opacity: 1;
+      z-index: 1;
+    }
+  
+    .centre {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    @keyframes changeSlide {
+      0%, 20%, 40%, 60%, 80%, 100% {
+        opacity: 0;
+      }
+      10%, 30%, 50%, 70%, 90% {
+        opacity: 1;
+      }
+    }
+  
+    i:hover input[type="radio"] {
+      animation: none;
+    }
+  
+    @media (max-width: 768px) {
+      i {
+        height: 50vh; /* Adjust the height for smaller screens */
+      }
+    }
+  </style>
+  
+  
   <!-- 
     - favicon
   -->
@@ -161,7 +220,39 @@
 
       
 <!-- 
- end hero section -->
+ end hero section -->  <h3 class="h2 section-title underline">What we create</h3>
+ <div class="centre">
+  <i>
+    <input type="radio" name="s" id="slide3" style="background-image: url('https://imgs.search.brave.com/LiO8Vaf4YZ14imMf4FGAq4tFq8SgxiPbBf6yyOZTWtA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZS1jc3MuY29t/L2Fzc2V0cy9pbWFn/ZXMvZnJlZS1jc3Mt/dGVtcGxhdGVzL3Bh/Z2UyOTYvbGlzdHJh/Y2UuanBn');">
+    <input type="radio" name="s" id="slide3" style="background-image: url('https://imgs.search.brave.com/hz1bGlZYY5inGlnmynakurCA9n0syoWSNcaf9w8LkMU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGVtcGxhdGUu/bmV0L3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE2LzA1LzMxMTAw/NzAxL1Bob3RvLVN0/dWRpby1XZWJzaXRl/LVRlbXBsYXRlLTE5/OS5qcGc');">
+    <input type="radio" name="s" id="slide1" style="background-image: url('https://imgs.search.brave.com/KrOv9bahc58S_m8u8plhGmrst7GeFJQ_ghsOj41VQio/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jb2xv/cmxpYi5jb20vd3Av/d3AtY29udGVudC91/cGxvYWRzL3NpdGVz/LzIvcG9ydGZvbGlv/LWh0bWwtd2Vic2l0/ZS10ZW1wbGF0ZS5q/cGc');">
+    <input type="radio" name="s" id="slide2" style="background-image: url('../assets/images/project2.png');">
+    <input type="radio" name="s" id="slide3" style="background-image: url('../assets/images/project3.png');">
+    <input type="radio" name="s" id="slide4" style="background-image: url('https://imgs.search.brave.com/dIDwpbQPOkB6wvIuSsO83uSWTr4oc4T_MNSfEgMrfOo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZS1jc3MuY29t/L2Fzc2V0cy9pbWFn/ZXMvZnJlZS1jc3Mt/dGVtcGxhdGVzL3Bh/Z2UyOTYvaW5hbmNl/LmpwZw');">
+    <input type="radio" name="s" id="slide5" style="background-image: url('https://imgs.search.brave.com/ODqJI6J7kNSN9RQHVZpmy6GxyD8qYnHnirUDoatwsIQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtZ2xvYmFsLndl/YnNpdGUtZmlsZXMu/Y29tLzVlNTkzZmIw/NjBjZjg3YmJhZjc1/ZGQyMC81ZmJkYTM2/MzM4NzJjYjc4YTUw/NTkxNDVfdGVtcGxh/dGVfbWt0cGxhY2Vf/aGVyby5qcGc');">
+  
+    <input type="radio" name="s" id="slide3" style="background-image: url('https://imgs.search.brave.com/7f0xLPVuE90CiX1cxkLm3WmpnQUa0DpeEM66_zc4QQw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGVtcGxhdGUu/bmV0L3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE2LzA1LzMxMTEy/OTAyL1Bob3RvZ3Jh/cGhlci1Qb3J0Zm9s/aW8tV2Vic2l0ZS1U/ZW1wbGF0ZS02OS5q/cGc');">
+    <input type="radio" name="s" id="slide3" style="background-image: url('https://imgs.search.brave.com/daJ9xQaWkXt-YbnfYsmPQwZVU1kAkGCvgvKJl6Pjagk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jb2xv/cmxpYi5jb20vd3Av/d3AtY29udGVudC91/cGxvYWRzL3NpdGVz/LzIvZGl2aS1waG90/by1nYWxsZXJ5LXdl/YnNpdGUtdGVtcGxh/dGUuanBn');">
+  
+  </i>
+</div>
+
+<script>
+  let currentSlide = 0;
+
+  function changeSlideAutomatically() {
+    const slides = document.querySelectorAll('input[type="radio"]');
+    slides[currentSlide].checked = true;
+    currentSlide = (currentSlide + 1) % slides.length;
+    setTimeout(changeSlideAutomatically, 3000); // Adjust the timeout for the slide change interval (in milliseconds)
+  }
+
+  // Start the automatic slideshow
+  changeSlideAutomatically();
+</script>
+
+
+
 
 
  
@@ -170,144 +261,7 @@
         - #BLOG
       -->
 
-      <section class="section blog" id="blog">
-        <div class="container">
-
-          <h2 class="h2 section-title underline scroll-animation">Our Project</h2>
-
-     
-
-          <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-            <div style="max-width: 800px; border: 1px solid #ddd; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-              <figure style="position: relative; overflow: hidden;">
-                <a>
-                  <img src="../assets/images/project1.png" width="750" height="350" loading="lazy" alt="Vestibulum massa arcu, consectetu pellentesque scelerisque;" style="display: block; width: 100%; height: auto;">
-                </a>
-              </figure>
-          
-              <div style="padding: 20px;">
-                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">
-                  <a href="#" style="text-decoration: none; color: #333;">TTransformative Consulting Solutions</a>
-                </h3>
-          
-                <p style="line-height: 1.5;">
-                    Our portfolio showcases a series of consulting engagements where our expertise has made a significant difference. From tackling complex business challenges to implementing strategic solutions, each project exemplifies our commitment to driving positive change. Dive into our project highlights and witness the transformative impact of our strategic consulting services.
-
-                    Feel free to customize the content further based on the specific details of your consulting projects and the outcomes you want to highlight.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-              
-              
-
-         
-
-        </div>
-        <div class="container">
-
-            <h2 class="h2 section-title underline scroll-animation">cryptocurrency Website</h2>
-  
-       
-  
-            <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-              <div style="max-width: 800px; border: 1px solid #ddd; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <figure style="position: relative; overflow: hidden;">
-                  <a href="#">
-                    <img src="../assets/images/project2.png" width="750" height="350" loading="lazy" alt="Vestibulum massa arcu, consectetu pellentesque scelerisque;" style="display: block; width: 100%; height: auto;">
-                  </a>
-                </figure>
-            
-                <div style="padding: 20px;">
-                  <h3 style="font-size: 1.5rem; margin-bottom: 10px;">
-                    <a href="#" style="text-decoration: none; color: #333;">Unveiling Excellence: Our Portfolio Showcase</a>
-                  </h3>
-            
-                  <p style="line-height: 1.5;">
-                    Embark on a journey through our diverse portfolio, where each project is a testament to our expertise in web development and design. From sleek and responsive designs to robust functionality, our projects showcase the depth of our capabilities. Explore the highlights and experience the excellence woven into every aspect of our web development endeavors.
-
-Feel free to further customize the content based on the specific details and achievements of your projects. This content provides a general overview, allowing visitors to delve into the excellence of your portfolio without specifying individual project names.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-                
-                
-  
-           
-  
-          </div>
-          <div class="container">
-
-            <h2 class="h2 section-title underline scroll-animation">Portfolio Project</h2>
-  
-       
-  
-            <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-              <div style="max-width: 800px; border: 1px solid #ddd; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <figure style="position: relative; overflow: hidden;">
-                  <a href="#">
-                    <img src="../assets/images/project3.png" width="750" height="350" loading="lazy" alt="Vestibulum massa arcu, consectetu pellentesque scelerisque;" style="display: block; width: 100%; height: auto;">
-                  </a>
-                </figure>
-            
-                <div style="padding: 20px;">
-                  <h3 style="font-size: 1.5rem; margin-bottom: 10px;">
-                    <a href="#" style="text-decoration: none; color: #333;">Unveiling Crypto Innovation: Our Project Showcase</a>
-                  </h3>
-            
-                  <p style="line-height: 1.5;">
-                    Embark on a journey through our crypto portfolio, where each project represents a milestone in blockchain innovation. From cutting-edge technologies to pioneering solutions, our projects showcase the depth of our expertise in the crypto domain. Explore the highlights and witness the transformative impact of our contributions to the world of cryptocurrency.
-
-                    Feel free to customize the content further based on the specific details and achievements of your crypto projects. This content provides a brief introduction to your crypto project showcase, inviting visitors to explore the innovation embedded in each endeavor.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-                
-                
-  
-           
-  
-          </div>
-          <div class="container">
-
-            <h2 class="h2 section-title underline scroll-animation">Networking</h2>
-  
-       
-  
-            <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-              <div style="max-width: 800px; border: 1px solid #ddd; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <figure style="position: relative; overflow: hidden;">
-                  <a href="#">
-                    <img src="../assets/images/blog-1.jpg" width="750" height="350" loading="lazy" alt="Vestibulum massa arcu, consectetu pellentesque scelerisque;" style="display: block; width: 100%; height: auto;">
-                  </a>
-                </figure>
-            
-                <div style="padding: 20px;">
-                  <h3 style="font-size: 1.5rem; margin-bottom: 10px;">
-                    <a href="#" style="text-decoration: none; color: #333;">Networking Excellence: Our Project Showcase</a>
-                  </h3>
-            
-                  <p style="line-height: 1.5;">
-                    Embark on a journey through our networking portfolio, where each project reflects our dedication to creating robust and efficient infrastructure solutions. From scalable network architectures to innovative technologies, our projects showcase the depth of our expertise in the networking domain. Explore the highlights and witness the transformative impact of our contributions to the world of networking.
-
-Feel free to customize the content further based on the specific details and achievements of your networking projects. This content provides a brief introduction to your networking project showcase, inviting visitors to explore the excellence embedded in each endeavor.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-                
-                
-  
-           
-  
-          </div>
-      </section>
+   <br/>
 
 
       
