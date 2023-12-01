@@ -1739,3 +1739,83 @@ resize: none;
   font-size: 24px;
   margin-right: 10px;
 }
+
+
+
+
+/* animatio */
+
+@import url('https://fonts.googleapis.com/css?family=Paytone+One');
+
+
+
+@keyframes filterHue2 {
+    50% {
+        filter: hue-rotate(1000deg);
+    }
+    100% {
+        filter: hue-rotate(2000deg);
+    }
+}
+
+@keyframes filterHue {
+    50% {
+        filter: hue-rotate(1000deg);
+    }
+    100% {
+        filter: hue-rotate(2000deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scaleUp {
+    50% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.25);
+    }
+}
+
+.loader-container {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: scaleUp 0.5s linear;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.loader {
+    background: #ff0c0c;
+    background: linear-gradient(50deg, #ff0c0c, #21d400);
+    border-radius: 10px;
+    filter: hue-rotate(0deg);
+    animation: filterHue 2.5s linear infinite;
+    height: 100%;
+    width: 100%;
+    transform: rotate(0deg);
+}
+
+.loader::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 10px;
+    top: 10px;
+    border-radius: 100%;
+}
+
+@supports (-ms-ime-align: auto) {
+  
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    
+
+    .loader {
+        background: linear-gradient(50deg, rgba(240, 0, 80, 1), #2380ff) !important;
+    }
+}
