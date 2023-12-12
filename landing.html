@@ -1,197 +1,1034 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Subscription</title>
-    <!-- Bootstrap CSS (optional, for styling) -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <style>
-         h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {}
-        
-        section {
-            padding: 60px 0;
-            min-height: 100vh;
-        }
-        
-        a,
-        a:hover,
-        a:focus,
-        a:active {
-            text-decoration: none;
-            outline: none;
-        }
-        
-        a,
-        a:active,
-        a:focus {
-            color: #6f6f6f;
-            text-decoration: none;
-            transition-timing-function: ease-in-out;
-            -ms-transition-timing-function: ease-in-out;
-            -moz-transition-timing-function: ease-in-out;
-            -webkit-transition-timing-function: ease-in-out;
-            -o-transition-timing-function: ease-in-out;
-            transition-duration: .2s;
-            -ms-transition-duration: .2s;
-            -moz-transition-duration: .2s;
-            -webkit-transition-duration: .2s;
-            -o-transition-duration: .2s;
-        }
-        
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        img {
-    max-width: 100%;
-    height: auto;
-}
-.section-title h2 {
-    font-size: 36px;
-    font-weight: 700;
-    background-image: -webkit-linear-gradient(-30deg, #052157 0%, #91039f 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 14px;
-}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Besto Solutions</title>
 
-.newsletter {
-    padding: 16% 0 5%;
-    background: url(https://img.freepik.com/premium-photo/bitcoin-icon-blockchain-crypto-currency-digital-encryption-technology-global-network-connections-background-concept-ai-generated_59529-4303.jpg?size=626&ext=jpg&ga=GA1.1.745243041.1698423410&semt=sph) no-repeat center center;
-    background-size: cover;
-    position: relative;
+
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
+    rel="stylesheet">
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.css">
+    <!-- chatbot -->
+<!-- <script type="text/javascript" src="./assets/js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="./assets/js/custom.js"></script>
+<link rel="stylesheet" type="text/css" href="./assets/css/jquery.convform.css">
+<script type="text/javascript" src="./assets/js/jquery.convform.js"></script> -->
     
-    min-height: 100vh;
-}
-  .newsletter:after {
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: -webkit-linear-gradient(-30deg, #91039f 0%, #052157 100%);
-    opacity: .8;
-    z-index: -1; }
-  .newsletter .section-title {
-    margin-bottom: 59px; }
-    .newsletter .section-title h2 {
-      background-image: -webkit-linear-gradient(-30deg, #ffffff 0%, #ffffff 100%); }
-    .newsletter .section-title p {
-      color: #fff; }
-  .newsletter .newsletter-form {
-    background: -webkit-linear-gradient(-30deg, #91039f 0%, #052157 100%);
-    position: relative;
-    height: 60px;
-    z-index: 2; }
-    .newsletter .newsletter-form:after {
-      position: absolute;
-      content: '';
-      left: -2px;
-      right: -2px;
-      top: -2px;
-      bottom: -2px;
-      background: -webkit-linear-gradient(-30deg, #91039f 0%, #91039f 100%);
-      z-index: -1; }
-    .newsletter .newsletter-form input {
-      width: 100%;
-      height: 100%;
-      border: none;
-      padding: 30px;
-      background: #3f1667;
-      color: #fff;
-      padding-right: 200px; }
-      .newsletter .newsletter-form input::-webkit-input-placeholder {
-        color: #fff;
-        opacity: .6; }
-      .newsletter .newsletter-form input:-ms-input-placeholder {
-        color: #fff;
-        opacity: .6; }
-      .newsletter .newsletter-form input::-ms-input-placeholder {
-        color: #fff;
-        opacity: .6; }
-      .newsletter .newsletter-form input::placeholder {
-        color: #fff;
-        opacity: .6; }
-    .newsletter .newsletter-form button {
-      position: absolute;
-      top: -2px;
-      right: -2px;
-      bottom: -2px;
-      width: 170px;
-      background: -webkit-linear-gradient(-30deg, #91039f 0%, #052157 100%);
-      outline: none;
-      border: none;
-      color: #fff;
-      font-weight: 500;
-      cursor: pointer; }
-      .newsletter .newsletter-form button:hover {
-        background: -webkit-linear-gradient(-30deg, #052157 0%, #91039f 100%); }
-    </style>
 </head>
-<body>
 
-    <div class="newsletter">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-7 col-lg-7">
-                    <div class="section-title text-center">
-                        <h2>Our Newslatter</h2>
-                        <p>We bring the right people together to challenge established thinking and drive transformation.
-                            We will show the way to successive.</p>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="row justify-content-center">
-                <div class="col-xl-7 col-lg-7">
-                    <form class="newsletter-form">
-                    <input type="email" name="email"  id="email"placeholder="Enter your email..." required>
-                </div>
-                <button type="button"  onclick="subscribe()">Subscribe</button>
-            </form>
+<body id="top">
+  <div id="particles-js"></div>
+
+  <!-- chatBot -->
+  <!-- <div class="chat_icon">
+    <i class="fab fa-rocketchat chatbot-icon" aria-hidden="true"></i>
+  </div>
+  <div class="chat_box">
+    <div  class="conv-form-wrapper">
+    <form action="" method="GET" class="hidden">
+      <select name="category" data-conv-question="Hello! How can I help you.">
+        <option value="Website Development">Website Development</option>
+        <option value="Digital Marketing">Digital Marketing</option>
+      </select>
+      <div data-conv-fork="category">
+        <div data-conv-case="Web Development">
+           <input type="text"  name="domain_name" data-conv-question="Please Tell me your domain name." >
         </div>
+        <div data-conv-case="Digital marketing">
+          <input type="text" name="company_name" data-conv-question="Please Tell me your company name .">
+       </div>
+        
+      </div>
+      <input type="text" name="name" data-conv-question="Please Tell me your your name .">
+      <input data-conv-question="Type in your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required placeholder="What's your e-mail?">
+      <select name="category" data-conv-question="conform?">
+        <option value="conform">conform</option>
+      </select>
+    </form>
+
     </div>
+  </div> -->
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#">
+        <h1 class="logo ">Besto Solutions</h1>
+        <p class="slogan"> where innovation meets results!</p>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">Besto Solution</a>
+
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="/landing.html" class="navbar-link" data-navbar-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/pages/about.html" class="navbar-link" data-navbar-link>About</a>
+          </li>
+
+          <li class="dropdown"><a class="navbar-link scrollto" href="/pages/services.html">Services</a>
+            <ul>
+             
+              <li><a href="./services/web_development.html">Web Development</a></li>
+              <li><a href="./services/social_marketing.html">Social- Marketing</a></li>
+              <li><a href="./services/seo.html">Search Engine Optimization(SEO)</a></li>
+             <li><a href="./services/digital_marketing_consulting.html"> Digital_marketing_consulting</a></li>
+              <li><a href="./services/email_marketing.html">Email Marketing</a></li>
+              <li><a href="./services/sem.html">Search Engine Marketing (SEM)</a></li>
+              <li><a href="./services/ppc.html">Pay-Per-Click (PPC) Management</a></li>
+              
+            </ul>
+          </li>
+
+        
+
+          
+          <li class="navbar-item">
+            <a href="/pages/Project.html" class="navbar-link" data-navbar-link>Our Projects</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/pages/contact.html" class="navbar-link" data-navbar-link>Contact Us</a>
+          </li>
+        
+
+        </ul>
+
+      </nav>
+
+      <a href="./pages/appointment.html" class="btn ">
+        <ion-icon name="chevron-forward-outline " aria-hidden="true"></ion-icon>
+
+        <span>MAKE APPOINTMENT</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero " id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle"> Welcome To</p>
+
+            <h2 class="h2 hero-title scroll-animation">Innovative Digital Solutions for Your Marketing Success</h2>
+
+
+            <p class="hero-text scroll-animation">
+              We are a digital marketing agency that specializes in helping business owners like you reach new heights through effective social media marketing, search engine optimization, and other online marketing services. Contact us today to learn more about our services and how we can help you grow your business! No matter where you are in india, we can help you.
+             <br><br>  <br><br><a href="./pages/contact.html"><button class="btn" >Contact Us</button></a> </p>
+            <a href="./pages/about.html">
+
+            </a>
+            
+
+          </div>
+
+          <figure class="hero-banner ">
+            <img    src="./assets/images/hero-banner.png" width="694" height="529" loading="lazy" alt="hero-banner"
+              class="w-100 banner-animation">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+<!-- whatsapp button -->
+<div class="whatsapp_float">
+  <a href="https://wa.me/919930668009" target="_blank"><img src="./assets/images/whatsapp.webp" width="50px" class="whatsapp_float_btn"/></a>
 </div>
+<div class="contact-icon-container">
+  <a href="./pages/contact.html" class="email-icon">&#9993;</a> <!-- Email icon with a mailto link -->
+  
 </div>
 
-<!-- Bootstrap JS and jQuery (required for Bootstrap components) -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<script>
-    function subscribe() {
-        // Get the entered email value
-        var email = document.getElementById("email").value;
+      <!-- 
+        - #ABOUT
+      -->
+      <br><br> <br><br>   <br><br> <br><br>
+      <section class="section about" id="about">
+        <div class="container">
 
-        // You can perform additional validation here if needed
+          <figure class="about-banner">
+            <img   src="./assets/images/about-banner.png" width="700" height="532" loading="lazy" alt="about banner"
+              class="w-100 banner-animation">
+          </figure>
 
-        // Save the email in localStorage (or you can send it to your server)
-        localStorage.setItem("subscribedEmail", email);
+          <div class="about-content">
 
-        // Submit the form data to Formspree
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://formspree.io/f/xqkvodrp', true);
-        xhr.setRequestHeader('Content-Type', 'application/json');
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                // Redirect to the landing page only if an email is entered and the form submission is successful
-                if (email.trim() !== "") {
-                    window.location.href = 'index.html';
-                }
-            }
-        };
-        xhr.send(JSON.stringify({ email: email }));
+            <h2 class="h2 section-title underline scroll-animation">We Are The Best Creative Digital Agency</h2>
+
+            <p class="about-text scroll-animation">
+              Besto solutions is one of the leading digital marketing company that provides borderless solutions across the globe. Our teams put their all efforts to present you the best, unique, and innovative Social Media Marketing, Search Engine Optimization, Google AdWords, Facebook Advertising and Instagram Advertising. Business Profile creation on various social media platforms. 
+            </p>
+
+            <p class="about-text scroll-animation">
+             
+              Our Mission is to help businesses grow online.
+            </p>
+
+            <ul class="stats-list scroll-animation">
+
+              <li class="stats-card">
+                <p class="h3 stats-title">Great Experience</p>
+
+                <p class="stats-text"></p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">Best Solutions</p>
+
+                <p class="stats-text"></p>
+              </li>
+
+              <li class="stats-card">
+                <p class=" h3 stats-title">Brand Visibility</p>
+
+                <p class="stats-text"></p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="services">
+        <div class="container">
+
+          <h2 class="h2 section-title underline scroll-animation">What Service We Offer</h2>
+
+          <ul class="service-list ">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon scroll-animation">
+                  <ion-icon name="desktop-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title scroll-animation">Social Media Marketing</h3>
+
+                <p class="text scroll-animation">
+                  Social Media Marketing is the cornerstone of a successful digital strategy. We specialize in creating custom social media campaigns that boost brand visibility, engage your audience, and drive business growth.
+                </p>
+                   <a href="./services/social_marketing.html">
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button></a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="globe-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title scroll-animation">Web Development</h3>
+
+                <p class="text scroll-animation">
+                  Our experienced team keeps your website current with the latest technologies. Whether you need a simple site or a complex web application, we provide tailored solutions to enhance your online presence.
+                </p>
+                  <a href="./services/web_development.html">
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button></a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon  name="desktop-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title scroll-animation">Web Solution</h3>
+
+                <p class="text scroll-animation">
+                we offer tailored web solutions, Whether you require website development, e-commerce solutions, or web application development, we're here to provide the customized tools and strategies you need to succeed in the online world.
+                </p>
+                 <a href="./services/web_solution.html">
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button></a>
+
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="globe-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title scroll-animation">Search Engine Marketing (SEM)</h3>
+
+                <p class="text scroll-animation">
+                  Search Engine Marketing (SEM) is the driving force behind online visibility and customer acquisition. We specialize in SEM strategies that propel your brand to the forefront of search engine results, increasing your online presence and potential customer engagement.
+                </p>
+                 <a href="./services/sem.html">
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button></a>
+
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon  name="desktop-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title scroll-animation">Pay-Per-Click (PPC) Management</h3>
+
+                <p class="text scroll-animation">
+              Our experienced team of PPC experts stays ahead of industry trends and search engine algorithms.we tailor our PPC management services to your unique goals, ensuring your ads are optimized, and continuously driving results for your business.
+                </p>
+                <a href="./services/ppc.html">
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button></a>
+
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="globe-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title scroll-animation">Search Engine Optimization (SEO)</h3>
+
+                <p class="text scroll-animation">
+                  Our expert SEO team keeps pace with the dynamic world of search algorithms and digital marketing trends. Whether it's keyword research, or technical SEO, we provide customized SEO solutions to help your website rise to the top of search results.
+                </p>
+                   <a href="./services/seo.html">
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button></a>
+
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon  name="desktop-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title scroll-animation">Email Marketing</h3>
+
+                <p class="text scroll-animation">
+                  Email Marketing is a powerful tool for engaging with your audience, nurturing leads, and driving conversions. Our expertise lies in crafting effective email marketing campaigns that connect your brand with your subscribers, fostering strong customer relationships.
+                </p>
+                   <a href="./services/email_marketing.html">
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button></a>
+
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="globe-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title scroll-animation">Lead Generation</h3>
+
+                <p class="text scroll-animation">
+                 In lead genration we specialize in strategies that attract and capture potential customers. Our focus is on creating effective lead generation campaigns that connect you with a qualified audience, increasing your chances of converting leads.
+                </p>
+                <a href="./services/lead_genration.html">
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button></a>
+
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="desktop-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title scroll-animation">Digital Marketing Consulting</h3>
+
+                <p class="text scroll-animation">
+                  Our experienced consultants will work closely with you to create a tailored digital marketing strategy that aligns with your business objectives ,market trends, competition, and target audiences .
+                </p>
+                <a href="./services/lead_genration.html">
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button></a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+<!-- 
+      testimonial section start -->
+
+      <section id="testimonials" class="testimonials section-bg">
+        <div class="container">
+  
+          <div class="section-title scroll-animation" data-aos="fade-up">
+            <h3 class="h2 section-title underline">Testimonials</h3>
+            <p class=" p-small scroll-animation">Hear what our clients have to say about their experience working with us through these inspiring testimonials</p>
+          </div>
+  
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item scroll-animation">
+                    <img src="/assets/images/testi3.avif" class="testimonial-img" alt="">
+                    <h3 >Isabella Rodriguez</h3>
+                    <h4>Digital Marketing Expert  </h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left "></i>
+                      Working with our dedicated team, including our seasoned Digital Marketing Expert, has been a game-changer for our online presence. Their expertise and strategic insights have significantly elevated our brand, driving measurable success in the digital realm.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item scroll-animation">
+                    <img src="/assets/images/testi2.avif" class="testimonial-img" alt="">
+                    <h3>Mateo Santos</h3>
+                    <h4>software Developer </h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left "></i>
+                      I am committed to creating efficient and scalable solutions. With a passion for problem-solving and a keen eye for innovation, I contribute to building robust software applications that meet and exceed the expectations of today's dynamic technological landscape.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.linkedin.com/in/kunal-chauhan-717934222/">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item scroll-animation">
+                    <img src="/assets/images/IMG-20210304-WA0040.jpg" class="testimonial-img" alt="">
+                    <h3>Kunal chauhan</h3>
+                    <h4>Fullstack Developer  </h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left "></i>
+                      I specialize in crafting seamless, end-to-end web solutions. My expertise spans both front-end and back-end technologies, ensuring robust and dynamic applications that meet the ever-evolving demands of the digital landscape.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </a>
+              </div>
+             
+             
+  
+              
+  
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+      </section>
+
+      <!-- 
+      testimonial section end -->
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features" id="features">
+        <div class="container">
+
+          <h2 class="h2 section-title underline scroll-animation">We Provide Creative Solutions</h2>
+
+          <ul class="features-list">
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+
+                <div class="content scroll-animation">
+                  <h3 class="h3 title">Trusted by Many Companies</h3>
+
+                  <p class="text">
+                    We practice gratitude every day to create an environment where everyone feels valued and appreciated.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+
+                <div class="content scroll-animation">
+                  <h3 class="h3 title">Digital Marketing Expert</h3>
+
+                  <p class="text">
+                    From startups to medium-sized enterprises to multiple-location companies, a digital marketing company helps you expand your niche market reach to offer goods and services to your target customers, irrespective of time differences or location.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <figure class="features-banner">
+            <img src="./assets/images/feautres-banner.png" width="369" height="318" loading="lazy" alt="Features Banner"
+              class="w-100 banner-animation">
+          </figure>
+
+          <ul class="features-list">
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+
+                <div class="content scroll-animation">
+                  <h3 class="h3 title">
+                    Professional Team</h3>
+
+                  <p class="text">
+                    We value honesty and transparency over perfectionism. Our team maintains open and honest communication at all times and keeps a high degree of workplace integrity.
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+
+                <div class="content scroll-animation">
+                  <h3 class="h3 title">
+                    Innovative Approach for Success</h3>
+
+                  <p class="text">
+                    our Innovative Approach for Success blends cutting-edge strategies and forward-thinking solutions, ensuring your business thrives in the dynamic digital landscape.
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <!-- <section class="section blog" id="blog">
+        <div class="container">
+
+          <h2 class="h2 section-title underline scroll-animation">Our Blog & News</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner scroll-animation">
+                  <a href="#">
+                    <img src="./assets/images/blog-1.jpg" width="750" height="350" loading="lazy"
+                      alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title scroll-animation">
+                    <a href="#">
+                      The Power of Social Media Advertising: A Step-by-Step Guide
+                    </a>
+                  </h3>
+
+                  <p class="text scroll-animation">
+                    In today's digital age, social media is not just about connecting with friends and family; it's also a powerful marketing tool. 
+                  </p>
+
+              
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner scroll-animation">
+                  <a href="#">
+                    <img src="./assets/images/blog-2.jpg" width="750" height="350" loading="lazy"
+                      alt="Quisque egestas iaculis felis eget placerat ut pulvinar mi." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title scroll-animation">
+                    <a href="#">
+                      SEO Trends to Watch Out for in 2023
+                    </a>
+                  </h3>
+
+                  <p class="text scroll-animation">
+                    Search engine optimization (SEO) is an ever-evolving field, and staying updated with the latest trends and algorithms is crucial for your website's visibility and ranking.
+                  </p>
+
+                
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner scroll-animation">
+                  <a href="#">
+                    <img src="./assets/images/blog-3.jpg" width="750" height="350" loading="lazy"
+                      alt="Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title scroll-animation">
+                    <a href="#">
+                      Content Marketing Best Practices: Creating Compelling Content That Converts
+                    </a>
+                  </h3>
+
+                  <p class="text scroll-animation">
+                    Content is king in the digital marketing realm, and creating compelling content that resonates with your audience is a skill worth mastering. 
+                  </p>
+
+               
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner scroll-animation">
+                  <a href="#">
+                    <img src="./assets/images/blog-4.jpg" width="750" height="350" loading="lazy"
+                      alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title scroll-animation">
+                    <a href="#">
+                      Email Marketing: The Art of Crafting Effective Campaigns
+                    </a>
+                  </h3>
+
+                  <p class="text scroll-animation">
+                    Email marketing remains a powerful tool for connecting with your audience, but crafting effective campaigns requires a delicate balance of strategy and creativity.
+                  </p>
+
+                 
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section> -->
+
+
+
+      <!-- contact form -->
+
+
+      <section>
+        <section><br/></section><section><br/></section><section></section><section></section>
+        <div class="formed">
+          <h3>Contact Form</h3>
+          <form   id="myForm" name="contact_form"   action="https://formspree.io/f/mqkvjkjd"
+          method="POST" >
+            <label for="first_name">First Name</label>
+            <input name="first_name" type="text" required placeholder="" autocomplete="off" required/>
+            <br>
+            <label for="last_name">Last Name</label>
+            <input name="last_name" type="text" required placeholder="" autocomplete="off" required/>
+            <br>
+            <label for="email">Email</label>
+            <input name="email" type="email" required placeholder="" required autocomplete="off"/>
+            <br>
+            <label for="message">Message</label><br>
+            <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+            <div class="center">
+              <input type="submit" id="submitBtn" value="Submit">
+            </div>
+          </form>	
+        </div>
+          </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo scroll-animation">Besto Solutions</a>
+
+          <p class="text scroll-animation">
+            We’re a digital marketing agency that helps businesses get started on the right foot. From social media marketing to paid ads, we’ve got you covered.
+          </p>
+
+         <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61553633173820" class="social-link scroll-animation">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+
+            <li>
+              <a href="https://www.linkedin.com/in/besto-solutions-154a2b24b/" class="social-link scroll-animation">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul> 
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title scroll-animation">Our links</p>
+          </li>
+
+          <li>
+            <a href="/" class="footer-link scroll-animation">Home</a>
+          </li>
+
+          <li>
+            <a href="./pages/about.html " class="footer-link scroll-animation">About Us</a>
+          </li>
+
+          <li>
+            <a href="./pages/services.html " class="footer-link scroll-animation">Services</a>
+          </li>
+
+          <li>
+            <a href="./pages/Project.html " class="footer-link scroll-animation">Our Projects</a>
+          </li>
+          <li>
+            <a href="./pages/contact.html " class="footer-link scroll-animation">contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title scroll-animation">Our Services</p>
+          </li>
+
+          <li>
+            <a href="./services/social_marketing.html" class="footer-link scroll-animation">Social Media Marketing</a>
+          </li>
+
+          <li>
+            <a href="./services/web_development.html" class="footer-link scroll-animation">Web Development</a>
+          </li>
+
+          <li>
+            <a href="./services/sem.html" class="footer-link scroll-animation">SEM</a>
+          </li>
+
+          <li>
+            <a href="./services/ppc.html" class="footer-link scroll-animation">PPC Management</a>
+          </li>
+          <li>
+            <a href="../services/digital_marketing_consulting.html" class="footer-link scroll-animation">Digital marketing consulting</a>
+          </li>
+          <li>
+            <a href="./services/seo.html" class="footer-link scroll-animation"> SEO</a>
+          </li>
+          <li>
+            <a href="./services/email_marketing.html" class="footer-link scroll-animation">Email Marketing</a>
+          </li>
+          <li>
+            <a href="./services/lead_genration.html" class="footer-link scroll-animation">Lead Generation</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title scroll-animation">Other links</p>
+          </li>
+
+          <li>
+            <a href="./pages/faq.html" class="footer-link scroll-animation">FAQ</a>
+          </li>
+
+          <li>
+            <a href="./pages/privacy.html" class="footer-link scroll-animation">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link scroll-animation">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link scroll-animation">Support</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title scroll-animation">Contact Us</p>
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+
+            <div>
+            
+              <a href="tel:+2486871365" class="footer-item-link">+918104974914</a>
+            </div>
+
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@desinic.com" class="footer-item-link">wecare@bestosolutions.in
+                 </a>
+              <a href="mailto:help@desinic.com" class="footer-item-link">www.bestosolutions.in</a>
+            </div>
+
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="location"></ion-icon>
+            </div>
+
+            <address class="footer-item-link scroll-animation">
+           US/ UK/ INDIA
+            </address>
+
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2022 <a href="#" class="copyright-link">BestoSolutions</a>. All Right Reserved
+      </p>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const elements = document.querySelectorAll('.scroll-animation');
+
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
     }
+
+    function addInViewClass() {
+        elements.forEach(element => {
+            if (isInViewport(element)) {
+                element.classList.add('in-view');
+            }
+        });
+    }
+
+    // Initial check on page load
+    addInViewClass();
+
+    // Check when scrolling
+    window.addEventListener('scroll', addInViewClass);
+
+
+
 </script>
+ <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
 
 </body>
+
 </html>
